@@ -1,0 +1,12 @@
+def generar_serie_3(N):
+    serie = []
+    for i in range(1, N + 1):
+        if i % 2 == 0:
+            serie.append(i + 1)  # números pares
+        else:
+            serie.append(i - 1)  # números impares
+    return serie
+
+# Ejemplo: Generar los primeros 10 términos
+N = 10
+print(generar_serie_3(N))
