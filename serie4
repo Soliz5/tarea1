@@ -1,0 +1,12 @@
+def generar_serie_4(N):
+    vocales = ['a', 'e', 'i', 'o', 'u']
+    serie = []
+    for i in range(N):
+        vocal = vocales[i % 5]  # Ciclo de las vocales
+        numero = (i // 5) + 2  # Aumenta el número después de 5 elementos
+        serie.append(f'{vocal}{numero - 1}{vocal}')
+    return serie
+
+# Ejemplo: Generar los primeros 10 términos
+N = 10
+print(generar_serie_4(N))
