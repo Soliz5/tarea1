@@ -1,0 +1,15 @@
+def generar_serie_5(N):
+    vocales = ['a', 'e', 'i', 'o', 'u']
+    serie = []
+    i = 0
+    while len(serie) < N:
+        if i % 2 == 0:
+            serie.append(vocales[i // 2 % 5])  # Alterna vocales
+        else:
+            serie.append(str(i // 2 + 1))  # Números en secuencia
+        i += 1
+    return serie
+
+# Ejemplo: Generar los primeros 10 términos
+N = 10
+print(generar_serie_5(N))
