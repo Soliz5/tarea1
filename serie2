@@ -1,0 +1,13 @@
+def generar_serie_2(N):
+    serie = []
+    valor = 1
+    incremento = 1
+    while len(serie) < N:
+        serie.extend([valor] * incremento)  # Añadimos 'valor' repetido 'incremento' veces
+        valor += 1
+        incremento += 1
+    return serie[:N]  # Limitar al tamaño N
+
+# Ejemplo: Generar los primeros 10 términos
+N = 10
+print(generar_serie_2(N))
